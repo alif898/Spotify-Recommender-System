@@ -1,8 +1,10 @@
 # Spotify-Recommender-System
 
 Get your recommendations [here](https://spotify-recommender.herokuapp.com/)!
+
 Update: I have not been given permission from Spotify to progress the app further from development mode.
-To try the system, you may contact me directly and I can register you manually.
+To try the recommender system, you may contact me directly and I can register you manually.
+
 App will be kept running until my Heroku trial credits run out :(
 
 ## Introduction
@@ -60,9 +62,13 @@ Although the scale of our system is unlikely to require such performance, I want
 The user will be prompted to sign-in and give permissions.
 Once done, we will then load our models and check if it needs to be retrained.
 Then we deliver recommendations and add them directly to a new playlist.
-The model and other relevant objects are stored in a ```.pkl``` file.
+The model, including the ```StandardScaler```, ```NearestNeighbors``` objects, are stored in a ```.pkl``` file.
+We also store a ```datetime``` object to keep track of when the model was trained. 
+The size is too large to upload to GitHub, so I have zipped it.
 
-We deploy our Flask app as a Docker container on Heroku, as specified in ```Dockerfile```. 
+We deploy our Flask app as a Docker container on Heroku, as specified in ```Dockerfile```.
+Note that the Spotify API login details are meant to be in a ```.env``` file that is not uploaded for security reasons.
+A sample file named ```sample.env``` shows how to set it up.
 Sample instructions can be found [here](https://medium.com/analytics-vidhya/dockerize-your-python-flask-application-and-deploy-it-onto-heroku-650b7a605cc9).
 
 ## Conclusion
