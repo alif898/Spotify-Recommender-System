@@ -1,3 +1,13 @@
+"""
+Module containg functions to interact with Spotify API to generate recommendations.
+
+Functions prefixed with '_' are meant to be private.
+
+To build a model, get recommendations and add them to playlist, the following flow is used:
+retrain_model -> generate_recommendations -> add_to_playlist
+"""
+
+# Importing required packages
 from __future__ import annotations
 
 import polars as pl

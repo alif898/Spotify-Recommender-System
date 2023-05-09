@@ -85,7 +85,7 @@ def deliver_recommendations() -> str | flask.Response:
 
     # Show user the link to the created playlist
     return f'<h2><a href="{playlist_link}">View the recommended songs here!</a></h2>, ' \
-           f'<h2><a href="https://github.com/alif898/Spotify-Recommender-System">View the code here!</a></h2>'
+           f'<h2><a href="https://github.com/alif898/Spotify-Recommender">View the code here!</a></h2>'
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# Spotify-Recommender-System
+# Spotify Recommender System
 
 Get your recommendations [here](https://spotify-recommender.herokuapp.com/)!
 
