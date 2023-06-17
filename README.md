@@ -77,6 +77,11 @@ I am pleased to be able to finally implement my idea of delivering a seamless re
 We successfully built on the previous project and this time, we were able to implement a more robust system that uses content-based filtering.
 Furthermore, we were able to deploy the recommender system. With a single link and login prompt, we were able to deliver the recommendations conveniently for the user.
 
+### Example
+
+This is what the generated playlist looks like.
+![Sample](sample.jpg)
+
 Nevertheless, there is still room for improvement. Firstly, there are many other ways to build a content-based filtering system, besides KNN.
 It may be worthwhile to try other methods and see if they work better.
 Secondly, the UI is still simple, just a simple 'Sign-in' prompt and then the playlists is just created.
